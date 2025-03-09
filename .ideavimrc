@@ -15,8 +15,11 @@ set hlsearch
 
 let mapleader=" "
 
-nnoremap <A-l> :tabnext<CR>
-nnoremap <A-h> :tabprev<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-h> :tabprev<CR>
+
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
 
 map <leader>e :NERDTree<CR>
 map <leader>q :NERDTreeClose<CR>

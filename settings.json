@@ -1,0 +1,58 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.autofetch": true,
+    "window.restoreWindows": "preserve",
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.run": "onSave",
+    "prettier.tabWidth": 4,
+    "svelte.enable-ts-plugin": true,
+    "[dockercompose]": {
+        "editor.tabSize": 4
+    },
+    "[yaml]": {
+        "editor.tabSize": 4
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "top",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.insertSpaces",
+        "editor.tabSize",
+        "editor.smoothScrolling",
+        "workbench.list.smoothScrolling"
+    ],
+    "python.createEnvironment.trigger": "off",
+    "dataWrangler.grid.defaultColumnWidth": 100,
+    "editor.fontSize": 17,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vim.commandLineModeKeyBindings": [
+    
+    ],
+    "vim.highlightedyank.enable": true,
+    "editor.lineNumbers": "relative",
+
+    // custom
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "vim.digraphs": {},
+    "vim.scroll": 15,
+    "editor.cursorSurroundingLines": 15,
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on"
+}

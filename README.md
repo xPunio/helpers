@@ -6,3 +6,5 @@ This repo is cointaining my helper files and usefull notes for developing code, 
 Library that makes creating notification toasts much easier
 
 ### Date Functions (date-fns)
+
+### Hook Form (react-hook-form)

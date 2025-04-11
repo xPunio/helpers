@@ -2,20 +2,25 @@
 [
     // Navigation
     {
-        "key": "space p f",
-        "command": "workbench.action.showAllEditors",
-        "when": "vim.mode == 'Normal' && editorTextFocus"
-    },
-    {
         "key": "space e",
         "command": "workbench.files.action.focusFilesExplorer",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "key": "Escape",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "vim.mode == 'Normal' && !editorTextFocus"
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
+    {
+        "key": "enter",
+        "command": "explorer.openAndPassFocus",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // {
+    //     "key": "Escape",
+    //     "command": "workbench.action.focusPreviousGroup",
+    //     "when": "vim.mode == 'Normal' && !editorTextFocus"
+    // },
     {
         "key": "ctrl-l",
         "command": "workbench.action.nextEditorInGroup",
@@ -74,7 +79,7 @@
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "space f f",
+        "key": "space p f",
         "command": "workbench.action.quickOpen",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
@@ -125,6 +130,11 @@
         "command": "explorer.openToSide",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !exolorerResourceReadonly && !inputFocus"
     },
+    // {
+    //     "key": "f",
+    //     "command": "explorer.open",
+    //     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !exolorerResourceReadonly && !inputFocus"
+    // },
     {
         "key": "ctrl+shift+k",
         "command": "-editor.action.deleteLines",

@@ -1,58 +1,124 @@
-{
-    "files.autoSave": "onFocusChange",
-    "editor.wordWrap": "on",
-    "explorer.confirmDragAndDrop": false,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "git.autofetch": true,
-    "window.restoreWindows": "preserve",
-    "git.openRepositoryInParentFolders": "never",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "eslint.run": "onSave",
-    "prettier.tabWidth": 4,
-    "svelte.enable-ts-plugin": true,
-    "[dockercompose]": {
-        "editor.tabSize": 4
-    },
-    "[yaml]": {
-        "editor.tabSize": 4
-    },
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    "editor.minimap.enabled": false,
-    "workbench.activityBar.location": "top",
-    "workbench.settings.applyToAllProfiles": [
-        "editor.insertSpaces",
-        "editor.tabSize",
-        "editor.smoothScrolling",
-        "workbench.list.smoothScrolling"
-    ],
-    "python.createEnvironment.trigger": "off",
-    "dataWrangler.grid.defaultColumnWidth": 100,
-    "editor.fontSize": 17,
-    "diffEditor.ignoreTrimWhitespace": true,
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "vim.commandLineModeKeyBindings": [
-    
-    ],
-    "vim.highlightedyank.enable": true,
-    "editor.lineNumbers": "relative",
+// {
+//     "files.autoSave": "onFocusChange",
+//     "editor.wordWrap": "on",
+//     "explorer.confirmDragAndDrop": false,
+//     "liveServer.settings.donotShowInfoMsg": true,
+//     "git.autofetch": true,
+//     "window.restoreWindows": "preserve",
+//     "git.openRepositoryInParentFolders": "never",
+//     "workbench.iconTheme": "material-icon-theme",
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true,
+//     "eslint.run": "onSave",
+//     "prettier.tabWidth": 4,
+//     "svelte.enable-ts-plugin": true,
+//     "[dockercompose]": {
+//         "editor.tabSize": 4
+//     },
+//     "[yaml]": {
+//         "editor.tabSize": 4
+//     },
+//     "[svelte]": {
+//         "editor.defaultFormatter": "svelte.svelte-vscode"
+//     },
+//     "editor.tabSize": 4,
+//     "editor.minimap.enabled": false,
+//     "workbench.activityBar.location": "top",
+//     "workbench.settings.applyToAllProfiles": [
+//         "editor.insertSpaces",
+//         "editor.tabSize",
+//         "editor.smoothScrolling",
+//         "workbench.list.smoothScrolling"
+//     ],
+//     "python.createEnvironment.trigger": "off",
+//     "dataWrangler.grid.defaultColumnWidth": 100,
+//     "editor.fontSize": 18,
+//     "diffEditor.ignoreTrimWhitespace": true,
+//     "extensions.experimental.affinity": {
+//         "asvetliakov.vscode-neovim": 1
+//     },
+//     "vim.commandLineModeKeyBindings": [],
+//     "vim.highlightedyank.enable": true,
+//     "editor.lineNumbers": "relative",
 
-    // custom
-    "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
-    "editor.smoothScrolling": true,
-    "vim.digraphs": {},
-    "vim.scroll": 15,
-    "editor.cursorSurroundingLines": 15,
+//     // custom
+//     "workbench.list.smoothScrolling": true,
+//     "terminal.integrated.smoothScrolling": true,
+//     "editor.smoothScrolling": true,
+//     "vim.digraphs": {},
+//     "vim.scroll": 10,
+//     "editor.cursorSurroundingLines": 15,
+//     "vim.sneak": true,
+//     "vim.sneakReplacesF": true,
+//     "vim.sneakUseIgnorecaseAndSmartcase": true,
+//     "workbench.colorTheme": "One Monokai",
+//     "editor.cursorBlinking": "smooth",
+//     "editor.cursorSmoothCaretAnimation": "on",
+//     "vim.enableNeovim": true,
+//     "terminal.integrated.fontSize": 18,
+//     "workbench.editor.customLabels.patterns": {
+//         "**/app/**/page.js": "Page: ${dirname}",
+//         "**/app/**/layout.js": "Layout: ${dirname}"
+//     }
+// }
+
+{
+    // vim options
+    "vim.scroll": 10,
     "vim.sneak": true,
     "vim.sneakReplacesF": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    "workbench.colorTheme": "Monokai Dimmed",
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on"
+    "vim.highlightedyank.enable": true,
+    "editor.lineNumbers": "relative",
+
+    // cosmetics
+    "workbench.colorTheme": "Modern Purple Theme Dark",
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 1,
+
+    // hide ui
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+
+    // editing and formatting
+    "editor.tabSize": 4,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "eslint.run": "onSave",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 80,
+
+    // file explorer
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.decorations.enabled": false,
+
+    // Typography
+    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.letterSpacing": 0.8,
+    "editor.lineHeight": 1.9,
+
+    // custom labels
+    "workbench.editor.customLabels.patterns": {
+        "**/app/**/page.js": "page: ${dirname}",
+        "**/app/**/layout.js": "layout: ${dirname}",
+        "**/app/**/error.js": "error: ${dirname}",
+        "**/app/**/loading.js": "loading: ${dirname}"
+    }
 }

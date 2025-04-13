@@ -7,9 +7,19 @@
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
+        "key": "space g i t",
+        "command": "workbench.view.scm",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "space x x",
+        "command": "workbench.view.extensions",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
         "key": "Escape",
         "command": "workbench.action.toggleSidebarVisibility",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+        "when": "sideBarVisible && vim.mode == 'Normal'"
     },
     {
         "key": "enter",
@@ -74,6 +84,11 @@
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
+        "key": "space b b d",
+        "command": "workbench.action.closeOtherEditors",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
         "key": "space s w",
         "command": "workbench.action.findInFiles",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
@@ -81,6 +96,11 @@
     {
         "key": "space p f",
         "command": "workbench.action.quickOpen",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space p s",
+        "command": "workbench.action.showCommands",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
